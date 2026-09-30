@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Estructura con Columnas</title>
+
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f8f9fa;
+            padding: 10px 20px;
+        }
+
+        .logo-pequeno {
+            width: 200px;
+            height: auto;
+            display: block;
+        }
+
+        .barra-navegacion {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .boton-nav {
+            text-decoration: none;
+            color: #333333;
+            background-color: #e0f7fa;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-family: sans-serif;
+            transition: background-color 0.3s;
+        }
+
+        .boton-nav:hover {
+            background-color: aqua;
+            color: white;
+        }
+
+        .boton-nav.activo {
+            background-color: aqua;
+            color: #e0f7fa;
+            font-weight: bold;
+        }
+
+        main {
+            display: flex;
+            gap: 20px;
+        }
+
+        aside {
+            width: 25%;
+            background-color: #f0f0f0;
+            padding: 15px;
+        }
+
+        section {
+            width: 75%;
+            background-color: #e0f7fa;
+            padding: 15px;
+        }
+
+        /* IMAGEN DEL ANUNCIO */
+        .imagen-lateral {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            display: block;
+            margin-top: 15px;
+        }
+
+        /* IMAGEN DEL ARTÍCULO */
+        .imagen-articulo {
+            width: 180px;
+            height: auto;
+            float: right;
+            margin-left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div>
+            <h1 style="margin: 0;">Mi Sitio Web</h1>
+
+            <nav>Menú de navegación</nav>
+
+            <a href="hiram.html" class="boton-nav">inicio</a>
+            <a href="2hiram.html" class="boton-nav">servicio</a>
+            <a href="3hiram.html" class="boton-nav">contacto</a>
+        </div>
+
+        <img src="imagenes/blanca.jpg"
+             alt="Logo de Mi Sitio Web"
+             class="logo-pequeno">
+
+    </header>
+
+
+    <main>
+
+        <!-- BARRA LATERAL -->
+        <aside>
+
+            <h3>Barra Lateral</h3>
+
+            <p>Anuncio:</p>
+
+            <img src="imagenes/monster.jpg"
+                 alt="Anuncio"
+                 class="imagen-lateral">
+
+        </aside>
+
+
+        <!-- ARTÍCULO PRINCIPAL -->
+        <section>
+
+            <article>
+
+                <h2>Noruega</h2>
+
+                <img src="imagenes/noruega.png"
+                     alt="Imagen de Noruega"
+                     class="imagen-articulo">
+
+                <p>
+                    Noruega es un país ubicado en el norte de Europa.
+                    Su capital es Oslo.
+                </p>
+
+                <p>
+                    Es conocido por sus fiordos, sus paisajes naturales
+                    y sus montañas. También es uno de los países
+                    escandinavos.
+                </p>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Pie de página</p>
+    </footer>
+
+</body>
+
+</html>
